@@ -1,4 +1,4 @@
-package AtividadeDeSala;
+package AtividadeBanco;
 import java.util.Scanner;
 
 public class Banco {

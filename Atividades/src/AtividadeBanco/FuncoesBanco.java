@@ -1,4 +1,4 @@
-package AtividadeDeSala;
+package AtividadeBanco;
 
 public class FuncoesBanco {
 
@@ -23,10 +23,12 @@ public class FuncoesBanco {
         return saldo;
     }
 
-    // 
+    // get Saque 
     public int getSaque() {
         return saque;
     }
+
+    // get do Saque
     public void setSaque(int saque) {
         if(saque <= getSaldo()){
             this.saldo -= saque;
@@ -35,16 +37,22 @@ public class FuncoesBanco {
             System.out.println("\nSaldo Indisponivel!");
     }
 
+    // get do deposito
     public int getDeposito() {
         return deposito;
     }
+
+    // set do deposito
     public void setDeposito(int deposito) {
         this.saldo += deposito;
     }
 
+    // get do nome
     public String getNome() {
         return nome;
     }
+
+    // set do nome
     public void setNome(String nome) {
         this.nome = nome;
     }
