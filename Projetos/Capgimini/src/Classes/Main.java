@@ -7,14 +7,17 @@ public class Main {
         // Programação Estruturada e Programação Orientada a Objetos
         // Trabalhando com métodos
         // Entendendo o que é uma classe.
-        Pessoa objetoPessoa = new Pessoa(); // 
-        
-
+        // Encapsulamento
+        // Modificador de acesso
+        Pessoa objetoPessoa = new Pessoa(); // Class Pessoa Objeto...
         Scanner leitor = new Scanner(System.in);
 
         System.out.println("Digite o peso da pessoa: ");
-        
+        objetoPessoa.setPeso(leitor.nextFloat());
         System.out.println("Digite a altura da pessoa: ");
+        objetoPessoa.setAltura(leitor.nextFloat());
+
+        System.out.println("IMC = " + objetoPessoa.calcularIMC());
         // 06:09 Aula 4.T
     }
 }
