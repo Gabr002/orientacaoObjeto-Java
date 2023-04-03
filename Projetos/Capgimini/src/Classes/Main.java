@@ -18,6 +18,7 @@ public class Main {
         objetoPessoa.setAltura(leitor.nextFloat());
 
         System.out.println("IMC = " + objetoPessoa.calcularIMC());
-        // 06:09 Aula 4.T
+        
+        // Método Construtor
     }
 }

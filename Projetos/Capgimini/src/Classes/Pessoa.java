@@ -20,15 +20,15 @@ public class Pessoa {
 
     // Get
     public float getPeso(){
-        return peso;
+        return this.peso;
     }
 
-    // get
+    // get - acessor
     public float getAltura() {
-        return altura;
+        return this.altura;
     }
 
-    // Set
+    // Set - Modificador
     public void setAltura(float altura) {
         this.altura = altura;
     }
