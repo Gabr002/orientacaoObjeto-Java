@@ -1,40 +1,15 @@
 package Heranca.Classes;
+
 import java.util.Date;
 
-public class Motorista {
-    private String nome;
-    private String cpf;
-    private Date dataNascimento;
-    private float salario;
+public class Motorista extends Funcionario {
 
-    public Motorista() {
-    
+    // Constructor
+    public Motorista(String nome, Date dataNascimento, String cpf, Double salario) {
+        /*
+         * Note que chamado o constructor da classe pai(FUNCIONARIO),
+         * para isso foi feito o uso do recurso "super" que chama o constructor da classe pai.
+         */
+        super(nome, dataNascimento, cpf, salario);
     }
-
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    public String getCpf() {
-        return cpf;
-    }
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-    public Date getDataNascimento() {
-        return dataNascimento;
-    }
-    public void setDataNascimento(Date dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
-    public float getSalario() {
-        return salario;
-    }
-    public void setSalario(float salario) {
-        this.salario = salario;
-    } 
-
-    
 }

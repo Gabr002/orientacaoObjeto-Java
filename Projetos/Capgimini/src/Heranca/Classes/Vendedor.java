@@ -2,47 +2,39 @@ package Heranca.Classes;
 
 import java.util.Date;
 
-public class Vendedor {
-    private String nome;
-    private String cpf;
-    private Date dataNascimento;
-    private float salario; 
+public class Vendedor extends Funcionario {
+    // Atributos
+    private double valorComissaoPeca;
+    private int totalPecasVendidas;
 
-    public Vendedor(){
+    // Constructor
+    public Vendedor(String nome, Date dataNascimento, String cpf, Double salario){
+        super(nome, dataNascimento, cpf, salario);
 
+        this.valorComissaoPeca = 10.0d;
     }
 
-    public String getNome() {
-        return nome;
+    // Metodos Acessores e Modificadores - Getters e Setters
+    public Double getSalario() {
+        return super.getSalario() + (totalPecasVendidas*valorComissaoPeca);
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public double getValorComissaoPeca() {
+        return valorComissaoPeca;
     }
 
-    public String getCpf() {
-        return cpf;
+    public void setValorComissaPeca(double valorComissaoPeca) {
+        this.valorComissaoPeca = valorComissaoPeca;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public int getTotalPecasVendidas() {
+        return totalPecasVendidas;
     }
 
-    public Date getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(Date dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
-
-    public float getSalario() {
-        return salario;
-    }
-
-    public void setSalario(float salario) {
-        this.salario = salario;
-    }
+    public void setTotalPecasVendidas(int totalPecasVendidas) {
+        this.totalPecasVendidas = totalPecasVendidas;
+    }  
 
     
+
 }
