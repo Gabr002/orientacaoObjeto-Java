@@ -22,23 +22,11 @@ public class Main {
 
         // Aplicativo: Simulação simples de conta bancária
         
-        String nome;
-        System.out.println("Seu nome: ");
-        nome = leitor.nextLine();
-        double saldoInicial;
-        System.out.println("Digite seu saldo Inicial: ");
-        saldoInicial = leitor.nextDouble();
-        Random numero = new Random();
-        int conta = 1 + numero.nextInt(9999);
-        int opc;
-
-        Funcionario c1 = new Funcionario(nome, conta, saldoInicial);
-    
-        c1.menuOpcoes();
-        System.out.println("Qual opcao voce deseja: ");
-        opc = leitor.nextInt();
-        c1.switchDeOperacoes(opc);
-
-        // Parei na página 214 - 2º paragrafo.
+        // 3 pilares da Programação Orientada Objeto
+        // Encapsulamento - Mesmo formato, mesmo padrão, troca entre mensagens.
+        // Interface - Lista de serviços fornecidos por um componente. É o contato 
+        // com o exterior, que define o que pode ser feito com um objeto dessa classe.
+        // Encapsular não é obrigatório, mas é uma boa prática para produzir Classes mais eficientes.
+        // Reutilização de códigos.
     }
 }
